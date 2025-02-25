@@ -31,12 +31,14 @@ class StringHelper
     /**
      * Return null if empty.
      *
-     * @param  string      $value
+     * @param  string|null $string
      * @return string|null
      */
-    public static function nullIfEmpty(string $value): ?string
+    public static function nullIfEmpty(?string $value): ?string
     {
-        return $value === '' ? null : $value;
+        return $value !== null
+            ? $value
+            : null;
     }
 
     /**
