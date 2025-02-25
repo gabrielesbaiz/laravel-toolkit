@@ -67,7 +67,12 @@
                 "Gabrielesbaiz\\LaravelToolkit\\LaravelToolkitServiceProvider"
             ],
             "aliases": {
-                "LaravelToolkit": "Gabrielesbaiz\\LaravelToolkit\\Facades\\LaravelToolkit"
+                "LaravelToolkit": "Gabrielesbaiz\\LaravelToolkit\\Facades\\LaravelToolkit",
+                "StringKit": "Gabrielesbaiz\\LaravelToolkit\\Facades\\StringKit",
+                "NumberKit": "Gabrielesbaiz\\LaravelToolkit\\Facades\\NumberKit",
+                "TimeKit": "Gabrielesbaiz\\LaravelToolkit\\Facades\\TimeKit",
+                "WebKit": "Gabrielesbaiz\\LaravelToolkit\\Facades\\WebKit",
+                "PhoneKit": "Gabrielesbaiz\\LaravelToolkit\\Facades\\PhoneKit"
             }
         }
     },
