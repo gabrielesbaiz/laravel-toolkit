@@ -15,16 +15,6 @@ class LaravelToolkit
         return new StringHelper;
     }
 
-    public static function phoneNumber(): PhoneNumberHelper
-    {
-        return new PhoneNumberHelper;
-    }
-
-    public static function web(): WebHelper
-    {
-        return new WebHelper;
-    }
-
     public static function number(): NumberHelper
     {
         return new NumberHelper;
@@ -33,5 +23,15 @@ class LaravelToolkit
     public static function time(): TimeHelper
     {
         return new TimeHelper;
+    }
+
+    public static function web(): WebHelper
+    {
+        return new WebHelper;
+    }
+
+    public static function phoneNumber(): PhoneNumberHelper
+    {
+        return new PhoneNumberHelper;
     }
 }
