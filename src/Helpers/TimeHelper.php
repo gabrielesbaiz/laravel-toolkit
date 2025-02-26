@@ -94,13 +94,13 @@ class TimeHelper
      * Count days difference between
      * two given dates.
      *
-     * @param  Carbon $endDate
+     * @param  Carbon $startDate
      * @param  Carbon $endDate
      * @return void
      */
     public static function countDaysBetween(Carbon $startDate, Carbon $endDate): int
     {
-        return $endDate->diffInDays($startDate, false);
+        return $startDate->diffInDays($endDate, false);
     }
 
     /**
