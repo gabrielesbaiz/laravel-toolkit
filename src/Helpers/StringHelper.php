@@ -36,7 +36,7 @@ class StringHelper
      */
     public static function nullIfEmpty(?string $value): ?string
     {
-        return $value !== null
+        return $value !== null && $value !== ''
             ? $value
             : null;
     }

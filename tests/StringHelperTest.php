@@ -34,6 +34,10 @@ it('returns null when the nullIfEmpty string is empty', function () {
     expect(StringHelper::nullIfEmpty(''))->toBeNull();
 });
 
+it('returns null when the nullIfEmpty string is null', function () {
+    expect(StringHelper::nullIfEmpty(null))->toBeNull();
+});
+
 it('returns the original value when the string is not empty', function () {
     expect(StringHelper::nullIfEmpty('test'))->toBe('test');
     expect(StringHelper::nullIfEmpty(' '))->toBe(' ');
