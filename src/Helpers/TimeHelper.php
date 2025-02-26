@@ -92,16 +92,15 @@ class TimeHelper
 
     /**
      * Count days difference between
-     * two given datesa in a d/m/Y format date.
+     * two given dates.
      *
-     * @param  string $startDate
-     * @param  string $endDate
+     * @param  Carbon $endDate
+     * @param  Carbon $endDate
      * @return void
      */
-    public static function countDaysBetween(string $startDate, string $endDate): int
+    public static function countDaysBetween(Carbon $startDate, Carbon $endDate): int
     {
-        return Carbon::createFromFormat('d/m/Y', $endDate)
-            ->diffInDays(Carbon::createFromFormat('d/m/Y', $startDate)->startOfDay(), false);
+        return $endDate->diffInDays($startDate, false);
     }
 
     /**

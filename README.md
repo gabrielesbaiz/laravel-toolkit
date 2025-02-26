@@ -157,7 +157,7 @@ PhoneKit::normalizePhoneNumber("+39 123 456 7890"); // "1234567890"
 - `TimeKit::dateComplete(?Carbon $date): ?string` - Returns a complete date in d/m/Y H:i:s format.
 - `TimeKit::dateBase(?Carbon $date): ?string` - Returns a base date in d/m/Y format.
 - `TimeKit::googleDate(Carbon $date): int` - Converts a Carbon date to a Google date integer.
-- `TimeKit::countDaysBetween(string $startDate, string $endDate): int` - Counts the days between two dates.
+- `TimeKit::countDaysBetween(Carbon $startDate, Carbon $endDate): int` - Counts the days between two dates.
 - `TimeKit::countDiffMonths(Carbon $endDate): int` - Counts the month difference between now and a given date.
 - `TimeKit::convertDmyToTimestamp(?string $value): ?string` - Converts d/m/Y to Y-m-d H:i:s.
 - `TimeKit::convertTimestampToDmy(?string $value): ?string` - Converts Y-m-d H:i:s to d/m/Y.
