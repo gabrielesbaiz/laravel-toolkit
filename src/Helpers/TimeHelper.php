@@ -96,7 +96,7 @@ class TimeHelper
      *
      * @param  Carbon $startDate
      * @param  Carbon $endDate
-     * @return void
+     * @return int
      */
     public static function countDaysBetween(Carbon $startDate, Carbon $endDate): int
     {
@@ -107,8 +107,9 @@ class TimeHelper
      * Count months difference between
      * now and a date.
      *
-     * @param Carbon $endDate
-     * @param Carbon $endDate
+     * @param  Carbon $endDate
+     * @param  Carbon $endDate
+     * @return int
      */
     public static function countDiffMonths(Carbon $endDate): int
     {
