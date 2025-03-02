@@ -1,5 +1,8 @@
 # LaravelToolkit
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/gabrielesbaiz/laravel-toolkit.svg?style=flat-square)](https://packagist.org/packages/gabrielesbaiz/laravel-toolkit)
+[![Total Downloads](https://img.shields.io/packagist/dt/gabrielesbaiz/laravel-toolkit.svg?style=flat-square)](https://packagist.org/packages/gabrielesbaiz/laravel-toolkit)
+
 A **lightweight and powerful helper package** for Laravel that provides utilities for **strings**, **numbers**, **time**, **web**, and **phone number** operations.
 
 ## Features
