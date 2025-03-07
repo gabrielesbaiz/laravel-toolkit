@@ -23,6 +23,10 @@ it('returns 0 when toThousands input is null', function () {
     expect(NumberHelper::toThousands(null))->toBe('0');
 });
 
+it('returns — when toThousandsString input is null', function () {
+    expect(NumberHelper::toThousandsString(null))->toBe('—');
+});
+
 it('formats numbers with thousands separator and two decimal places', function () {
     expect(NumberHelper::toThousandsDecimal('1000'))->toBe('1.000,00');
     expect(NumberHelper::toThousandsDecimal('2500000.5'))->toBe('2.500.000,50');
@@ -187,6 +191,10 @@ it('replaces decimal points with commas', function () {
 
 it('returns "0" when toDecimalComma value is null', function () {
     expect(NumberHelper::toDecimalComma(null))->toBe('0');
+});
+
+it('returns "—" when toDecimalCommaString value is null', function () {
+    expect(NumberHelper::toDecimalCommaString(null))->toBe('—');
 });
 
 it('formats numbers as an integer percentage string', function () {

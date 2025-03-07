@@ -31,6 +31,19 @@ class NumberHelper
     }
 
     /**
+     * To decimal comma string.
+     *
+     * @param  string|null $value
+     * @return float
+     */
+    public static function toDecimalCommaString(?string $value): string
+    {
+        return $value === null || $value == '0'
+            ? '—'
+            : str_replace('.', ',', $value);
+    }
+
+    /**
      * To thousands.
      *
      * @param  string|null $value
