@@ -44,6 +44,19 @@ class NumberHelper
     }
 
     /**
+     * To thousands string.
+     *
+     * @param  string|null $value
+     * @return float
+     */
+    public static function toThousandsString(?string $value): string
+    {
+        return $value !== null
+            ? number_format((float) $value, 0, ',', '.')
+            : '—';
+    }
+
+    /**
      * To thousands decimal.
      *
      * @param  string|null $value
