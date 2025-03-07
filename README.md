@@ -130,6 +130,7 @@ PhoneKit::normalizePhoneNumber("+39 123 456 7890"); // "1234567890"
 ### **NumberKit**
 - `NumberKit::toDecimalPoint(?string $value): float` - Converts a formatted number to a decimal point.
 - `NumberKit::toDecimalComma(?string $value): string` - Converts a decimal point to a comma format.
+- `NumberKit::toDecimalCommaString(?string $value): string` - Converts a decimal point to a comma formatand '—' for 0 values.
 - `NumberKit::toThousands(?string $value): string` - Formats a number with thousand separators.
 - `NumberKit::toThousandsString(?string $value): string` - Formats a number with thousand separators and '—' for 0 values.
 - `NumberKit::toThousandsDecimal(?string $value): string` - Formats a number with thousands and two decimal places.
