@@ -51,9 +51,9 @@ class NumberHelper
      */
     public static function toThousandsString(?string $value): string
     {
-        return $value !== null
-            ? number_format((float) $value, 0, ',', '.')
-            : '—';
+        return $value === null || $value == '0'
+            ? '—'
+            : number_format((float) $value, 0, ',', '.');
     }
 
     /**
