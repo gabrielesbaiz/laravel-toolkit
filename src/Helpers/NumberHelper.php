@@ -149,6 +149,19 @@ class NumberHelper
     }
 
     /**
+     * Rounded 3 decimals.
+     *
+     * @param  mixed $value
+     * @return float
+     */
+    public static function rounded3(mixed $value): float
+    {
+        return $value !== null
+            ? round((float) $value, 3, PHP_ROUND_HALF_UP)
+            : 0.0;
+    }
+
+    /**
      * To int string.
      *
      * @param  string|null $value

@@ -90,6 +90,17 @@ it('returns 0.0 when rounded4 input is null', function () {
     expect(NumberHelper::rounded4(null))->toBe(0.0);
 });
 
+it('rounds numbers to three decimal places', function () {
+    expect(NumberHelper::rounded3(10.99999))->toBe(11.000);
+    expect(NumberHelper::rounded3(5.67891))->toBe(5.679);
+    expect(NumberHelper::rounded3(123.45678))->toBe(123.457);
+    expect(NumberHelper::rounded3(0.00004))->toBe(0.000);
+});
+
+it('returns 0.0 when rounded3 input is null', function () {
+    expect(NumberHelper::rounded3(null))->toBe(0.0);
+});
+
 it('returns the same string if value is non-zero', function () {
     expect(NumberHelper::toIntString('123'))->toBe('123');
     expect(NumberHelper::toIntString('-50'))->toBe('-50');
