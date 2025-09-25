@@ -338,7 +338,7 @@ class TimeHelper
     }
 
     /**
-     * Return longAbsoluteDiffForHumans time.
+     * Return diffHumansShort time.
      *
      * @param  Carbon|null $value
      * @return string|null
@@ -347,6 +347,19 @@ class TimeHelper
     {
         return $value !== null
             ? $value->longAbsoluteDiffForHumans()
+            : null;
+    }
+
+    /**
+     * Return diffHumansLong time.
+     *
+     * @param  Carbon|null $value
+     * @return string|null
+     */
+    public static function diffHumansLong(?Carbon $value): ?string
+    {
+        return $value !== null
+            ? $value->longAbsoluteDiffForHumans(4)
             : null;
     }
 

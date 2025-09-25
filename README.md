@@ -177,6 +177,7 @@ PhoneKit::normalizePhoneNumber("+39 123 456 7890"); // "1234567890"
 - `TimeKit::diffHumans(?Carbon $value): ?string` - Returns a human-readable difference from now.
 - `TimeKit::diffHumansComplete(?Carbon $value): ?string` - Returns a detailed human-readable difference.
 - `TimeKit::diffHumansShort(?Carbon $value): ?string` - Returns a shorter human-readable difference.
+- `TimeKit::diffHumansLong(?Carbon $value): ?string` - Returns a longer human-readable difference.
 - `TimeKit::countDiffDays(string $date): int` - Counts the days between now and a given date.
 - `TimeKit::excelToCarbon(int $excelDate): Carbon` - Converts an Excel date to a Carbon date.
 -  `TimeKit::timeDiff(Carbon $dateTo, Carbon $dateFrom, ?int $parts = 4): string` - Returns the time difference between two dates.
