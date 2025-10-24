@@ -137,6 +137,7 @@ PhoneKit::normalizePhoneNumber("+39 123 456 7890"); // "1234567890"
 - `NumberKit::toCurrency(?string $value): float` - Converts a number to a rounded currency format.
 - `NumberKit::toFloor(mixed $value): float` - Floors a number to two decimal places.
 - `NumberKit::toInt(mixed $value, int $precision): int` - Converts a float to an integer with precision.
+- `NumberKit::toPriceInt(mixed $value): int` - Converts a float to its integer price value (in cents).
 - `NumberKit::rounded(mixed $value): float` - Rounds a number to two decimals.
 - `NumberKit::rounded3(mixed $value): float` - Rounds a number to three decimals.
 - `NumberKit::rounded4(mixed $value): float` - Rounds a number to four decimals.
