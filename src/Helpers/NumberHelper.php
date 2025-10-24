@@ -123,6 +123,19 @@ class NumberHelper
     }
 
     /**
+     * To price int.
+     *
+     * @param  mixed $value
+     * @return int
+     */
+    public static function toPriceInt(mixed $value): int
+    {
+        return $value !== null
+            ? (int) self::toInt($value * 100, 0)
+            : 0;
+    }
+
+    /**
      * Rounded 2 decimals.
      *
      * @param  mixed $value
