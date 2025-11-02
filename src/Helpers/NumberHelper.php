@@ -136,6 +136,17 @@ class NumberHelper
     }
 
     /**
+     * To comma string.
+     *
+     * @param  float  $value
+     * @return string
+     */
+    public static function toCommaString(float $value): string
+    {
+        return number_format($value, 2, ',', '');
+    }
+
+    /**
      * Rounded 2 decimals.
      *
      * @param  mixed $value
